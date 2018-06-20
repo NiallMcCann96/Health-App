@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/health">
+
+    <Button
+        android:text="BMI Calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BBMI"
+        android:layout_marginBottom="180dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:id="@+id/TVUsername"
+        tools:text="@string/EmptyString"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="Workout Exercises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BWorkout"
+        android:layout_alignBaseline="@+id/BBMI"
+        android:layout_alignBottom="@+id/BBMI"
+        android:layout_toRightOf="@+id/BBMI"
+        android:layout_toEndOf="@+id/BBMI"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:text="Welcome to HealthTrack,"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:layout_marginBottom="116dp"
+        android:layout_above="@+id/BBMI"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:text=" Please use one of the features of our app below."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginTop="28dp"
+        android:textStyle="normal|italic"
+        android:layout_below="@+id/TVUsername"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Health Tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/BTips"
+        android:layout_below="@+id/BWorkout"
+        android:layout_alignLeft="@+id/BBMI"
+        android:layout_alignStart="@+id/BBMI"
+        android:layout_toLeftOf="@+id/BWorkout"
+        android:layout_toStartOf="@+id/BWorkout" />
+
+    <Button
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BLogOut"
+        android:layout_below="@+id/BTips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>
